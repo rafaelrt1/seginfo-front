@@ -7,7 +7,7 @@ const Navigation = () => {
         <BrowserRouter>
             <Routes>
                 <Route exact path="/" element={<Login />} />
-                <Route exact path="/senhas" element={<Passwords />} />
+                <Route path="/senhas" element={<Passwords />} />
             </Routes>
         </BrowserRouter>
     );

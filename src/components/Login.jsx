@@ -15,14 +15,8 @@ const Login = () => {
 
     const encrypt = (data) => {
         const encrypted = CryptoES.SHA3(data).toString();
-        // const encrypted = CryptoES.AES.encrypt(data, KEY).toString();
         return encrypted;
     };
-
-    // const decrypt = (dataToDecrypt) => {
-    //     const passDecripted = CryptoES.AES.decrypt(dataToDecrypt, KEY);
-    //     return passDecripted.toString(CryptoES.enc.Utf8);
-    // };
 
     const registerPassword = (encryptedPassword) => {
         try {
@@ -76,12 +70,6 @@ const Login = () => {
         e.preventDefault();
         const passEncrypted = encrypt(password);
         tryLogin(passEncrypted);
-        // const passDecrypted = decrypt(passEncrypted);
-        // if (password === passDecrypted) {
-        //     history("/senhas");
-        // } else {
-        //     alert("Senha incorreta");
-        // }
     };
 
     const configPassword = (e) => {

@@ -1,38 +1,186 @@
 .App {
-  text-align: center;
+    padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (max-width: 762px) {
+.App {
+    padding: 10px;
+}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.passwordInput {
+    margin: 10px 0;
+    font-size: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px 40px 10px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.passwordLabel {
+    font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+    border-radius: 4px;
+    border: 0;
+    padding: 10px;
+    min-width: 130px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.buttonEnter {
+    background-color: #1E943D;
+}
+
+.textStyle {
+    color: #FFFFFF;
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+}
+
+.centeredView {
+    flex: 1;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.modalView {
+    gap: 20px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.disabledButton {
+    background-color: #CCCCCC;
+    color: #999999;
+}
+
+.actionButton {
+    align-self: flex-start;
+    padding: 0 0 20px 30px;
+}
+
+.buttonSave {
+    background-color: #1E943D;
+}
+
+.buttonCopy {
+    background-color: #0000BD;
+    margin-top: 10px;
+}
+
+.buttonCopy:hover {
+    background-color: #01018b;
+}
+
+.buttonClose {
+    background-color: #FC0303;
+}
+
+.modalText {
+    text-align: center;
+}
+
+.input {
+    margin-top: 10px 0;
+    font-size: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+}
+
+.label {
+    font-size: 20px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.credentialCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    padding: 20px;
+    max-width: 300px;
+    min-width: 300px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: 10px;
+    border: 1px solid #c8c8c8; 
+    justify-content: space-between;
+    box-shadow: 3px 3px 5px black;
+}
+
+.cardTitle {
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cardInfos {
+    flex-direction: row;
+}
+
+.cardInfo {
+    color: #333333;
+    font-size: 18px;
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+
+.options {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+.icon {
+    margin-top: 10;
+    cursor: pointer;
+}
+
+.action-icons {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.password {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 34px);
 }
